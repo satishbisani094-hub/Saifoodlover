@@ -179,7 +179,7 @@ export default function App() {
     <div className="min-h-screen bg-[#070709] text-[#e0e0e0] font-sans overflow-x-hidden antialiased">
       
       {/* 1. MAIN FLOATING STICKY NAV BAR */}
-      <nav className="sticky top-0 z-40 bg-[#09090c]/90 backdrop-blur-md border-b-2 border-[#ffd700]/30 py-5 transition-all shadow-lg shadow-[#000]/30">
+      <nav className="fixed top-0 left-0 right-0 z-40 bg-[#09090c]/90 backdrop-blur-md border-b-2 border-[#ffd700]/30 py-5 transition-all shadow-lg shadow-[#000]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <a href="#" className="flex items-center gap-3.5 group">
             <div className="relative p-3 bg-gradient-to-br from-[#f57c00] to-orange-600 rounded-2xl shadow-xl border-2 border-[#ffd700]/40 group-hover:scale-105 transition-transform duration-300">
@@ -262,7 +262,7 @@ export default function App() {
 
       {/* MOBILE NAV DRAWER */}
       {isMobileMenuOpen && (
-        <div className="md:hidden sticky top-[82px] z-30 bg-[#09090c]/95 backdrop-blur-md border-b-2 border-[#ffd700]/25 py-4 px-6 flex flex-col gap-3 font-semibold uppercase tracking-wider text-xs border-t border-white/5 animate-in slide-in-from-top duration-300">
+        <div className="md:hidden fixed top-[82px] left-0 right-0 z-30 bg-[#09090c]/95 backdrop-blur-md border-b-2 border-[#ffd700]/25 py-4 px-6 flex flex-col gap-3 font-semibold uppercase tracking-wider text-xs border-t border-white/5 animate-in slide-in-from-top duration-300">
           <a 
             href="#" 
             onClick={() => setIsMobileMenuOpen(false)}
@@ -307,7 +307,7 @@ export default function App() {
       )}
 
       {/* 2. FULL SCREEN HERO BANNER */}
-      <header className="relative py-24 sm:py-32 bg-cover bg-center overflow-hidden flex items-center select-none" style={{ backgroundImage: "linear-gradient(rgba(7, 7, 9, 0.93), rgba(7, 7, 9, 0.95)), url('https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=1600&auto=format&fit=crop&q=80')" }}>
+      <header className="relative mt-[82px] py-24 sm:py-32 bg-cover bg-center overflow-hidden flex items-center select-none" style={{ backgroundImage: "linear-gradient(rgba(7, 7, 9, 0.93), rgba(7, 7, 9, 0.95)), url('https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=1600&auto=format&fit=crop&q=80')" }}>
         {/* Soft Radial Gold Overlay */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(245,124,0,0.1),transparent_70%)]" />
 

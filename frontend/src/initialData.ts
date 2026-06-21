@@ -260,39 +260,48 @@ export const INITIAL_MENU: MenuItem[] = [
 export const INITIAL_COMBOS: ComboOffer[] = [
   {
     id: "c1",
-    name: "Chicken Lovers Supreme Combo",
-    description: "Get the best of both worlds! Includes 1x Chicken Pizza (Regular Size), 1x Chicken Burger, and 1x refreshing Blue Curacao Mojito. The perfect premium meal feast.",
-    price: 300,
-    originalPrice: 350,
+    name: "Veg Combo Large",
+    description: "Super-saver family size veg feast. Includes 1x Veg Pizza (6 Piece), French Fries, 1x Veg Sandwich, 1x Veg Burger, 1x Campa Cool Drink, Veg Fingers, and 1x Vennela Milkshake.",
+    price: 549,
+    originalPrice: 630,
     imageUrl: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop&q=80",
-    items: ["Chicken Pizza (Regular)", "Chicken Burger", "Blue Curacao Mojito"]
+    items: ["Veg Pizza (6 Piece)", "French Fries", "Veg Sandwich", "Veg Burger", "Campa Cool Drink", "Veg Fingers", "Vennela Milkshake"]
   },
   {
     id: "c2",
-    name: "Veggie Delight Fiesta Combo",
-    description: "Perfect vegetarian treats! Comes with 1x classic Veg Pizza (Regular), 1x crunchy Veg Wrap, and 1x premium Strawberry Milkshake.",
-    price: 250,
-    originalPrice: 290,
+    name: "Mini Veg Combo",
+    description: "Perfect single-serving veggie combo. Comes with 1x Veg Pizza (4 Piece), French Fries, 1x Veg Sandwich, and 1x Campa Cool Drink.",
+    price: 280,
+    originalPrice: 330,
     imageUrl: "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=800&auto=format&fit=crop&q=80",
-    items: ["Veg Pizza (Regular)", "Veg Wrap", "Strawberry Milkshake"]
+    items: ["Veg Pizza (4 Piece)", "French Fries", "Veg Sandwich", "Campa Cool Drink"]
   },
   {
     id: "c3",
-    name: "KFC Style Super Feast Combo",
-    description: "Our crispest fried chicken selection. Enjoy 1x Crispy Chicken Lollipop (3 pcs), 1x Crunchy Chicken Wings (4 pcs), and 1x thick Chocolate Milkshake.",
-    price: 290,
-    originalPrice: 340,
-    imageUrl: "https://images.unsplash.com/photo-1562967914-608f82629710?w=800&auto=format&fit=crop&q=80",
-    items: ["Chicken Lollipop (3 pcs)", "Chicken Wings (4 pcs)", "Chocolate Milkshake"]
+    name: "Non Veg Combo Large",
+    description: "Ultimate non-veg feast for chicken lovers. Includes 1x Chicken Pizza (6 Piece), French Fries, 1x Sandwich, Chicken Pop Corn, 1x Chicken Burger, and 1x Strawberry Milkshake.",
+    price: 649,
+    originalPrice: 730,
+    imageUrl: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=80",
+    items: ["Chicken Pizza (6 Piece)", "French Fries", "Sandwich", "Chicken Pop Corn", "Chicken Burger", "Strawberry Milkshake"]
   },
   {
     id: "c4",
-    name: "Snack Attack Combo",
-    description: "For the mid-day munchies: 1x French Fries (Peri-Peri flavor), 1x toasted Chicken Sandwich, and 1x fresh Lemon Mint Mojito.",
-    price: 230,
-    originalPrice: 270,
-    imageUrl: "https://images.unsplash.com/photo-1576107232684-1279f390859f?w=800&auto=format&fit=crop&q=80",
-    items: ["French Fries (Peri Peri)", "Chicken Sandwich", "Lemon Mint Mojito"]
+    name: "Mini Non Veg Combo",
+    description: "Deluxe mini non-veg combo pack. Features 1x Chicken Pizza (4 Piece), 1x Chicken Sandwich, Chicken Pop Corn, and 1x Campa Cool Drink.",
+    price: 349,
+    originalPrice: 420,
+    imageUrl: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&auto=format&fit=crop&q=80",
+    items: ["Chicken Pizza (4 Piece)", "Chicken Sandwich", "Chicken Pop Corn", "Campa Cool Drink"]
+  },
+  {
+    id: "c5",
+    name: "Fried Chicken Combo",
+    description: "Satisfying crispy fried chicken platter. Includes 2x Chicken Lollipops, 2x Chicken Wings, 2x Chicken Strips, 1x Chicken Leg, Pop Corn, and 1x Campa Cool Drink.",
+    price: 349,
+    originalPrice: 390,
+    imageUrl: "https://images.unsplash.com/photo-1562967914-608f82629710?w=800&auto=format&fit=crop&q=80",
+    items: ["2 Lollipop", "2 Wings", "2 Strips", "1 Leg", "Pop Corn", "Campa Cool Drink"]
   }
 ];
 

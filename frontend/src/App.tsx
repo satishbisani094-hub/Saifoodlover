@@ -69,7 +69,7 @@ export default function App() {
   });
 
   const [combos, setCombos] = useState<ComboOffer[]>(() => {
-    const saved = localStorage.getItem("saifood_combos");
+    const saved = localStorage.getItem("saifood_combos_v3");
     return saved ? JSON.parse(saved) : INITIAL_COMBOS;
   });
 
@@ -130,7 +130,7 @@ export default function App() {
   }, [menuItems]);
 
   useEffect(() => {
-    localStorage.setItem("saifood_combos", JSON.stringify(combos));
+    localStorage.setItem("saifood_combos_v3", JSON.stringify(combos));
   }, [combos]);
 
   useEffect(() => {

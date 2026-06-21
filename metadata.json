@@ -1,0 +1,6 @@
+{
+  "name": "Saifoodlover Cafe",
+  "description": "A premium, responsive, and luxury-themed digital ordering menu and website for Saifoodlover Cafe, featuring WhatsApp ordering, interactive custom item customizers, and an admin management dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

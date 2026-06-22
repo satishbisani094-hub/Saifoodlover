@@ -37,14 +37,23 @@ export default function AdminPanel({
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
   const [password, setPassword] = useState<string>("");
   const [authError, setAuthError] = useState<string>("");
+  const [loginClicks, setLoginClicks] = useState<number>(0);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === "admin123" || password === "saifood") {
-      setIsAuthenticated(true);
-      setAuthError("");
+    if (password === "sai@1234") {
+      const nextClicks = loginClicks + 1;
+      setLoginClicks(nextClicks);
+      if (nextClicks >= 3) {
+        setIsAuthenticated(true);
+        setAuthError("");
+        setLoginClicks(0);
+      } else {
+        setAuthError(`Verifying passkey... Click the button ${3 - nextClicks} more time(s) to confirm.`);
+      }
     } else {
-      setAuthError("Incorrect pin. Tip: Use 'saifood' or 'admin123' to access.");
+      setLoginClicks(0);
+      setAuthError("Incorrect passcode. Access denied.");
     }
   };
 
@@ -278,11 +287,12 @@ export default function AdminPanel({
               <input
                 id="admin-passcode-input"
                 type="password"
-                placeholder="Hint: Use 'saifood'"
+                placeholder="Enter admin passkey"
                 value={password}
                 onChange={(e) => {
                   setPassword(e.target.value);
                   setAuthError("");
+                  setLoginClicks(0);
                 }}
                 className="w-full bg-[#1e1e24] border border-gray-700 focus:border-[#f57c00] text-white px-4 py-2.5 rounded-lg text-sm text-center font-mono outline-none transition-all duration-200"
                 required

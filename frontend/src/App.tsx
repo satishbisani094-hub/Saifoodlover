@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { MenuItem, ComboOffer, CustomerReview, CustomerInquiry, CartItem } from "./types";
 import { 
   CATEGORIES, 
